@@ -1,0 +1,69 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout title="Tips & Tricks - PB Dodgeball">
+  <main class="max-w-7xl mx-auto px-4 py-8">
+    <!-- Hero Section -->
+    <section class="text-center mb-16">
+      <h1 class="text-5xl font-bold text-yellow-500 mb-6">Our Rules</h1>
+      <p class="text-lg text-white/80 max-w-2xl mx-auto">
+        An understanding of our basic rules is all that's needed to get you
+        started, check out the infographic below.
+      </p>
+      <div class="w-24 h-1 bg-[rgb(248,187,4)] mx-auto mt-6"></div>
+    </section>
+
+    <!-- Infographic Section -->
+    <section class="mb-16">
+      <div class="max-w-3xl mx-auto">
+        <div class="bg-white/5 backdrop-blur-sm rounded-2xl shadow-lg p-8 border border-white/10">
+          <img
+            src="https://images.squarespace-cdn.com/content/v1/60ccfe760c7c872f03b3984d/f44f5189-8cee-4883-a3d9-b24bd3c01d97/Quick+Rules+Infographic+%281%29.png"
+            alt="PB Dodgeball Rules Infographic"
+            width="800"
+            height="2000"
+            loading="lazy"
+            class="w-full h-auto rounded-lg"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- Quick Tips Section -->
+    <section class="mb-16">
+      <h2 class="text-3xl font-bold text-center text-white mb-8">Quick Tips</h2>
+      <div class="grid md:grid-cols-3 gap-6 max-w-5xl mx-auto">
+        <div class="bg-white/5 backdrop-blur-sm rounded-xl border border-white/10 p-6 text-center hover:border-[rgb(248,187,4)]/30 transition-all">
+          <div class="w-16 h-16 bg-[rgb(248,187,4)] rounded-full flex items-center justify-center mx-auto mb-4">
+            <svg class="w-8 h-8 text-[#0b0b10]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+            </svg>
+          </div>
+          <h3 class="text-xl font-bold text-yellow-500 mb-2">Stay Alert</h3>
+          <p class="text-white/80">Keep your eyes on the ball and be ready to dodge at any moment.</p>
+        </div>
+
+        <div class="bg-white/5 backdrop-blur-sm rounded-xl border border-white/10 p-6 text-center hover:border-[rgb(248,187,4)]/30 transition-all">
+          <div class="w-16 h-16 bg-[rgb(248,187,4)] rounded-full flex items-center justify-center mx-auto mb-4">
+            <svg class="w-8 h-8 text-[#0b0b10]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"></path>
+            </svg>
+          </div>
+          <h3 class="text-xl font-bold text-yellow-500 mb-2">Team Work</h3>
+          <p class="text-white/80">Communicate with your teammates and work together to win.</p>
+        </div>
+
+        <div class="bg-white/5 backdrop-blur-sm rounded-xl border border-white/10 p-6 text-center hover:border-[rgb(248,187,4)]/30 transition-all">
+          <div class="w-16 h-16 bg-[rgb(248,187,4)] rounded-full flex items-center justify-center mx-auto mb-4">
+            <svg class="w-8 h-8 text-[#0b0b10]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14.828 14.828a4 4 0 01-5.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+            </svg>
+          </div>
+          <h3 class="text-xl font-bold text-yellow-500 mb-2">Have Fun</h3>
+          <p class="text-white/80">Remember, it's all about enjoying the game and making friends!</p>
+        </div>
+      </div>
+    </section>
+  </main>
+</Layout>

@@ -1,11 +1,85 @@
 ---
-import Welcome from '../components/Welcome.astro';
 import Layout from '../layouts/Layout.astro';
-
-// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
-// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
+import lauraImg from '../assets/testimonial-laura.png';
+import lizzyImg from '../assets/testimonial-lizzy.png';
+import jamesImg from '../assets/testimonial-james.png';
 ---
 
-<Layout>
-	<Welcome />
+<Layout title="PB Dodgeball | Making friends in Bromley & Bexley">
+  <main class="max-w-7xl mx-auto px-4 py-8">
+    <!-- Video Section -->
+    <section class="mb-16">
+      <div class="max-w-4xl mx-auto">
+        <div class="aspect-video rounded-2xl overflow-hidden shadow-lg">
+          <iframe
+            width="100%"
+            height="100%"
+            src="https://www.youtube.com/embed/3BhrCkLK1gM"
+            title="PB Dodgeball Video"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen
+            class="w-full h-full"
+          ></iframe>
+        </div>
+      </div>
+    </section>
+
+    <!-- Hero Section -->
+    <section class="text-center mb-16">
+      <h1 class="text-5xl font-bold text-yellow-500 mb-4">TRY FOR FREE</h1>
+      <h2 class="text-3xl font-semibold text-white mb-6">Make friends in Bromley!</h2>
+      <p class="text-lg text-white/80 max-w-2xl mx-auto mb-4">
+        We welcome anyone 16+, at any level of fitness. Being good is absolutely
+        not a requirement, it's all about making friends, having fun and getting
+        a bit of exercise at the same time.
+      </p>
+      <p class="text-xl font-bold text-yellow-500">Give it a go for FREE!</p>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="mb-16">
+      <h2 class="text-4xl font-bold text-center text-white mb-12">What Our Members Say</h2>
+
+      <div class="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+        <article class="bg-white/5 backdrop-blur-sm rounded-xl border border-white/10 p-6 shadow-sm hover:shadow-md hover:border-[rgb(248,187,4)]/30 transition-all">
+          <div class="flex items-center gap-4 mb-4">
+            <img src={lauraImg.src} alt="Laura" width="60" height="60" class="rounded-full w-15 h-15 object-cover border-2 border-yellow-500" />
+            <cite class="text-yellow-500 font-semibold not-italic text-lg">Laura</cite>
+          </div>
+          <blockquote class="text-white/80 italic">
+            "Great atmosphere, really lovely people and fun to have a good run
+            around and throw balls about :) Everyone was welcoming, the rules
+            were explained and then we played a few different games. Would
+            recommend if you're looking for a different way to exercise or to
+            meet new people."
+          </blockquote>
+        </article>
+
+        <article class="bg-white/5 backdrop-blur-sm rounded-xl border border-white/10 p-6 shadow-sm hover:shadow-md hover:border-[rgb(248,187,4)]/30 transition-all">
+          <div class="flex items-center gap-4 mb-4">
+            <img src={lizzyImg.src} alt="Lizzy" width="60" height="60" class="rounded-full w-15 h-15 object-cover border-2 border-yellow-500" />
+            <cite class="text-yellow-500 font-semibold not-italic text-lg">Lizzy</cite>
+          </div>
+          <blockquote class="text-white/80 italic">
+            "I would recommend joining this club if you want to start a fun new
+            sport and make some great friends! Everyone is very welcoming and all
+            skill levels are welcome"
+          </blockquote>
+        </article>
+
+        <article class="bg-white/5 backdrop-blur-sm rounded-xl border border-white/10 p-6 shadow-sm hover:shadow-md hover:border-[rgb(248,187,4)]/30 transition-all">
+          <div class="flex items-center gap-4 mb-4">
+            <img src={jamesImg.src} alt="James" width="60" height="60" class="rounded-full w-15 h-15 object-cover border-2 border-yellow-500" />
+            <cite class="text-yellow-500 font-semibold not-italic text-lg">James</cite>
+          </div>
+          <blockquote class="text-white/80 italic">
+            "Im still a relatively new player but I cannot recommend the club
+            enough. A great group of people who are really welcoming. Add to
+            that loads of well run socials!"
+          </blockquote>
+        </article>
+      </div>
+    </section>
+  </main>
 </Layout>
