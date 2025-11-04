@@ -6,36 +6,54 @@ import jamesImg from '../assets/testimonial-james.png';
 ---
 
 <Layout title="PB Dodgeball | Making friends in Bromley & Bexley">
-  <main class="max-w-7xl mx-auto px-4 py-8">
-    <!-- Video Section -->
-    <section class="mb-16">
-      <div class="max-w-4xl mx-auto">
-        <div class="aspect-video rounded-2xl overflow-hidden shadow-lg">
-          <iframe
-            width="100%"
-            height="100%"
-            src="https://www.youtube.com/embed/3BhrCkLK1gM"
-            title="PB Dodgeball Video"
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            allowfullscreen
-            class="w-full h-full"
-          ></iframe>
-        </div>
+  <main>
+    <!-- Carousel Section -->
+    <section class="splide mb-16" aria-label="Hero Images">
+      <div class="splide__track">
+        <ul class="splide__list">
+          <li class="splide__slide">
+            <div class="relative h-96 bg-gradient-to-r from-yellow-500/20 to-orange-500/20 flex items-center justify-center">
+              <div class="text-center">
+                <h1 class="text-6xl font-bold text-yellow-500 mb-4">PB DODGEBALL</h1>
+                <p class="text-2xl text-white">Making friends in Bromley & Bexley</p>
+              </div>
+            </div>
+          </li>
+          <li class="splide__slide">
+            <div class="relative h-96 bg-gradient-to-r from-blue-500/20 to-purple-500/20 flex items-center justify-center">
+              <div class="text-center">
+                <h2 class="text-5xl font-bold text-white mb-4">WELCOME EVERYONE</h2>
+                <p class="text-xl text-white/80">All fitness levels • Ages 16+ • Fun first!</p>
+              </div>
+            </div>
+          </li>
+          <li class="splide__slide">
+            <div class="relative h-96 bg-gradient-to-r from-green-500/20 to-teal-500/20 flex items-center justify-center">
+              <div class="text-center">
+                <h2 class="text-5xl font-bold text-white mb-4">JOIN THE COMMUNITY</h2>
+                <p class="text-xl text-white/80">Great socials • Friendly atmosphere • New friendships</p>
+              </div>
+            </div>
+          </li>
+        </ul>
       </div>
     </section>
 
-    <!-- Hero Section -->
-    <section class="text-center mb-16">
-      <h1 class="text-5xl font-bold text-yellow-500 mb-4">TRY FOR FREE</h1>
-      <h2 class="text-3xl font-semibold text-white mb-6">Make friends in Bromley!</h2>
-      <p class="text-lg text-white/80 max-w-2xl mx-auto mb-4">
-        We welcome anyone 16+, at any level of fitness. Being good is absolutely
-        not a requirement, it's all about making friends, having fun and getting
-        a bit of exercise at the same time.
-      </p>
-      <p class="text-xl font-bold text-yellow-500">Give it a go for FREE!</p>
-    </section>
+    <div class="max-w-7xl mx-auto px-4">
+      <!-- Primary Call to Action -->
+      <section class="text-center mb-16 bg-gradient-to-r from-yellow-500/10 to-orange-500/10 rounded-3xl p-12 border border-yellow-500/20">
+        <h2 class="text-5xl font-bold text-yellow-500 mb-6">TRY FOR FREE</h2>
+        <h3 class="text-3xl font-semibold text-white mb-8">Make friends in Bromley!</h3>
+        <p class="text-lg text-white/80 max-w-2xl mx-auto mb-8">
+          We welcome anyone 16+, at any level of fitness. Being good is absolutely
+          not a requirement, it's all about making friends, having fun and getting
+          a bit of exercise at the same time.
+        </p>
+        <p class="text-xl font-bold text-yellow-500 mb-8">Give it a go for FREE!</p>
+        <a href="/book" class="inline-block bg-yellow-500 text-black font-bold py-4 px-8 rounded-lg text-xl hover:bg-yellow-400 transition-colors shadow-lg hover:shadow-xl">
+          Book Your Free Session
+        </a>
+      </section>
 
     <!-- Testimonials Section -->
     <section class="mb-16">
@@ -81,5 +99,69 @@ import jamesImg from '../assets/testimonial-james.png';
         </article>
       </div>
     </section>
+
+    <!-- Latest News Section -->
+    <section class="mb-16">
+      <h2 class="text-4xl font-bold text-center text-white mb-12">Latest News</h2>
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
+        <article class="bg-white/5 backdrop-blur-sm rounded-xl border border-white/10 p-6 hover:shadow-md hover:border-yellow-500/30 transition-all">
+          <div class="text-yellow-500 text-sm font-semibold mb-2">November 2024</div>
+          <h3 class="text-xl font-bold text-white mb-3">New Players Welcome!</h3>
+          <p class="text-white/80">
+            We're always looking for new faces to join our friendly dodgeball community. 
+            Come along to any session and give it a try!
+          </p>
+        </article>
+
+        <article class="bg-white/5 backdrop-blur-sm rounded-xl border border-white/10 p-6 hover:shadow-md hover:border-yellow-500/30 transition-all">
+          <div class="text-yellow-500 text-sm font-semibold mb-2">October 2024</div>
+          <h3 class="text-xl font-bold text-white mb-3">Tournament Success</h3>
+          <p class="text-white/80">
+            Great performance at the regional tournament last month. Well done to 
+            everyone who participated - next tournament is coming up soon!
+          </p>
+        </article>
+
+        <article class="bg-white/5 backdrop-blur-sm rounded-xl border border-white/10 p-6 hover:shadow-md hover:border-yellow-500/30 transition-all">
+          <div class="text-yellow-500 text-sm font-semibold mb-2">September 2024</div>
+          <h3 class="text-xl font-bold text-white mb-3">Social Event</h3>
+          <p class="text-white/80">
+            Thanks to everyone who came to our end-of-summer social. Great turnout 
+            and lots of fun - looking forward to the next one!
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <!-- Secondary CTA -->
+    <section class="text-center mb-16 bg-white/5 rounded-3xl p-12 border border-white/10">
+      <h2 class="text-4xl font-bold text-white mb-6">Ready to Join Us?</h2>
+      <p class="text-lg text-white/80 max-w-xl mx-auto mb-8">
+        Don't wait - come and experience the fun, friendship, and fitness that PB Dodgeball offers. 
+        Your first session is completely free!
+      </p>
+      <div class="flex flex-col sm:flex-row gap-4 justify-center items-center">
+        <a href="/book" class="bg-yellow-500 text-black font-bold py-3 px-6 rounded-lg hover:bg-yellow-400 transition-colors">
+          Book Free Session
+        </a>
+        <a href="/about" class="bg-transparent border-2 border-white/20 text-white font-bold py-3 px-6 rounded-lg hover:border-yellow-500 hover:text-yellow-500 transition-all">
+          Learn More
+        </a>
+      </div>
+    </section>
+    </div>
   </main>
 </Layout>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    new Splide('.splide', {
+      type: 'loop',
+      autoplay: true,
+      interval: 5000,
+      pauseOnHover: true,
+      pagination: true,
+      arrows: true,
+    }).mount();
+  });
+</script>
